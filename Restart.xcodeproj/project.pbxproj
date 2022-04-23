@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6400B4BD2814B33E00ADB3F7 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6400B4BC2814B33E00ADB3F7 /* Test.swift */; };
 		6400B4BF2814B6D800ADB3F7 /* .swift-format.json in Resources */ = {isa = PBXBuildFile; fileRef = 6400B4BE2814B6D800ADB3F7 /* .swift-format.json */; };
 		6400B4C22814B73600ADB3F7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6400B4C12814B73600ADB3F7 /* .gitignore */; };
 		642857532814B064005B25CF /* RestartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642857522814B064005B25CF /* RestartApp.swift */; };
 		642857552814B064005B25CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642857542814B064005B25CF /* ContentView.swift */; };
 		642857572814B068005B25CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642857562814B068005B25CF /* Assets.xcassets */; };
 		6428575A2814B068005B25CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642857592814B068005B25CF /* Preview Assets.xcassets */; };
+		6428873D2814BDCC002DD288 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6428873B2814BDCC002DD288 /* chimeup.mp3 */; };
+		6428873E2814BDCC002DD288 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6428873C2814BDCC002DD288 /* success.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6400B4BC2814B33E00ADB3F7 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		6400B4BE2814B6D800ADB3F7 /* .swift-format.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ".swift-format.json"; sourceTree = "<group>"; };
 		6400B4C02814B6E800ADB3F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../Nerdify/Pets/pets-ios/README.md"; sourceTree = "<group>"; };
 		6400B4C12814B73600ADB3F7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -26,6 +26,8 @@
 		642857542814B064005B25CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		642857562814B068005B25CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642857592814B068005B25CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6428873B2814BDCC002DD288 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		6428873C2814BDCC002DD288 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,14 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6400B4BB2814B33000ADB3F7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6400B4BC2814B33E00ADB3F7 /* Test.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		642857462814B064005B25CF = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +63,7 @@
 		642857512814B064005B25CF /* Restart */ = {
 			isa = PBXGroup;
 			children = (
-				6400B4BB2814B33000ADB3F7 /* Model */,
+				6428873F2814BDDF002DD288 /* Sounds */,
 				642857522814B064005B25CF /* RestartApp.swift */,
 				642857542814B064005B25CF /* ContentView.swift */,
 				642857562814B068005B25CF /* Assets.xcassets */,
@@ -86,6 +80,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6428873F2814BDDF002DD288 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6428873B2814BDCC002DD288 /* chimeup.mp3 */,
+				6428873C2814BDCC002DD288 /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +99,7 @@
 				6428574B2814B064005B25CF /* Sources */,
 				6428574C2814B064005B25CF /* Frameworks */,
 				6428574D2814B064005B25CF /* Resources */,
+				64C4E42F2814B940006AADD4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -147,11 +151,33 @@
 				6400B4C22814B73600ADB3F7 /* .gitignore in Resources */,
 				6428575A2814B068005B25CF /* Preview Assets.xcassets in Resources */,
 				642857572814B068005B25CF /* Assets.xcassets in Resources */,
+				6428873D2814BDCC002DD288 /* chimeup.mp3 in Resources */,
+				6428873E2814BDCC002DD288 /* success.m4a in Resources */,
 				6400B4BF2814B6D800ADB3F7 /* .swift-format.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64C4E42F2814B940006AADD4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swift-format > /dev/null; then\n  swift-format lint -r --configuration .swift-format.json . \nelse\n  echo \"error: swift-format not installed, download from https://github.com/apple/swift-format or use brew install swift-format and restart xcode\"\n  return\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6428574B2814B064005B25CF /* Sources */ = {
@@ -160,7 +186,6 @@
 			files = (
 				642857552814B064005B25CF /* ContentView.swift in Sources */,
 				642857532814B064005B25CF /* RestartApp.swift in Sources */,
-				6400B4BD2814B33E00ADB3F7 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
