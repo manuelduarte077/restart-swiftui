@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+
+  @AppStorage("onboarding") var isOboardingViewActive: Bool = true
+  
   var body: some View {
-    Text("Find My Hola")
-      .padding()
-      .background(.blue)
+    ZStack {
+      if isOboardingViewActive {
+        OnboaardingView()
+      }else{
+        HomeView()
+      }
+    }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+      .previewDevice("iPhone13")
   }
 }
